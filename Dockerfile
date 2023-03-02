@@ -1,6 +1,2 @@
-FROM  pytorch/pytorch:1.10.0-cuda11.3-cudnn8-devel
-RUN pip install opencv-python  opencv-contrib-python
-RUN pip install Cython matplotlib tqdm  numpy  scipy  PyYAML
-RUN pip install tensorboardX  tensorboard  scikit-learn  scikit-image
-RUN pip install seaborn  pillow   einops  lpips  natsort
-RUN pip install timm  openpyxl  kornia
+FROM  zqing10/docker:v1.3.7
+RUN pip install tensorboardX -i https://pypi.douban.com/simple/
