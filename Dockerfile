@@ -1,3 +1,3 @@
-FROM  amwork2010/tensorflow1.4.0-tutorial:latest
-RUN pip install Pillow==3.2.0   easydict  matplotlib Cython Image
-RUN pip install pyyaml  opencv-python
+FROM  tensorflow/tensorflow:1.4.0-rc0-gpu-py3
+RUN pip install opencv-python
+RUN  apt-get update && apt --fix-broken install && apt-get install libgl1
