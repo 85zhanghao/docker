@@ -1,2 +1,2 @@
-FROM  tensorflow/tensorflow:1.4.0-rc0-gpu-py3
-RUN pip install opencv-python-headless -i https://pypi.mirrors.ustc.edu.cn/simple
+FROM  85zhanghao/docker:v3.2.0
+RUN pip install mmcv-full
